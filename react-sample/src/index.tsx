@@ -1,17 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
-import Hello from './components/Hello';
-import Name from './components/Name';
-import Message from './components/Message';
-import Button from './components/Button';
-import Parent from './components/ContainerSample';
-import Page from './components/ContextSample';
-import Counter from './components/Counter';
-import Counter2 from './components/Counter2';
-import { Parent2 } from './components/Parent';
+import ReactUseCallbackSample from './components/ReactUseCallbackSample';
+import ReactUseStateSample from './components/ReactUseStateSample';
+import ReactUseReducerSample from './components/ReactUseReducerSample';
+
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -19,7 +13,7 @@ const root = ReactDOM.createRoot(
 root.render(
   <div>
   {/* <React.StrictMode> */}
-    <Parent2 />
+    <ReactUseReducerSample initialValue={0}/>
   {/* </React.StrictMode> */}
   </div>
 

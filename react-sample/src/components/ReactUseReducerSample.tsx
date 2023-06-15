@@ -1,3 +1,4 @@
+import { type } from 'os'
 import { useReducer } from 'react'
 
 type Action = 'DECREMENT' | 'INCREMENT' | 'DOUBLE' | 'RESET'
@@ -21,9 +22,10 @@ type CounterProps = {
     initialValue: number
 }
 
-const Counter2 = (props: CounterProps) => {
+const ReactUseReducerSample = (props: CounterProps) => {
     const { initialValue } = props
     const [count, dispatch] = useReducer(reducer, initialValue)
+
 
     return (
         <div>
@@ -36,4 +38,4 @@ const Counter2 = (props: CounterProps) => {
     )
 }
 
-export default Counter2
+export default ReactUseReducerSample

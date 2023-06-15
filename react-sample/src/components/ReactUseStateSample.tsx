@@ -4,7 +4,7 @@ type CounterProps = {
     initialValue: number
 }
 
-const Counter = (props: CounterProps) => {
+const ReactUseStateSample = (props: CounterProps) => {
     const { initialValue } = props
     const [count, setCount] = useState(initialValue)
 
@@ -17,4 +17,4 @@ const Counter = (props: CounterProps) => {
     )
 }
 
-export default Counter
+export default ReactUseStateSample

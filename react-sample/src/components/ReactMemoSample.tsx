@@ -1,4 +1,4 @@
-import React, { memo, useState } from 'react'
+import React, { memo, useCallback, useState } from 'react'
 
 type FizzProps = {
     isFizz: boolean
@@ -12,22 +12,34 @@ const Fizz = (props: FizzProps) => {
 
 type BuzzProps = {
     isBuzz: boolean
+    onClick: () => void
 }
 
-const Buzz = memo<BuzzProps>((props) => {
-    const { isBuzz } = props
+const Buzz = memo((props: BuzzProps) => {
+    const { isBuzz, onClick } = props
     console.log(`Buzzが再描画されました, izBuzz=${isBuzz}`)
     return (
-        <span>
+        <span onClick={onClick}>
             {isBuzz ? 'Buzz' : ''}
         </span>
     )
 })
 
-export const Parent2 = () => {
+export const ReactMemoSample = () => {
     const [count, setCount] = useState(1)
     const isFizz = count % 3 === 0
     const isBuzz = count % 5 === 0
+
+    // const onBuzzClick = () => {
+    //     console.log(`Buzzがクリックされました isBuzz=${isBuzz}`)
+    // }
+
+    const onBuzzClick = useCallback(
+        () => {
+            console.log(`Buzzがクリックされました isBuzz=${isBuzz}`)
+        }
+        , []
+    )
 
     console.log(`Parentが再描画されました, count=${count}`)
     return (
@@ -36,7 +48,7 @@ export const Parent2 = () => {
             <p>{`現在のカウント: ${count}`}</p>
             <p>
                 <Fizz isFizz={isFizz} />
-                <Buzz isBuzz={isBuzz} />
+                <Buzz isBuzz={isBuzz} onClick={onBuzzClick}/>
             </p>
         </div>
         
