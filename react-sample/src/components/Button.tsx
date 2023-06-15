@@ -1,5 +1,6 @@
 const Button = (props: {label: string, text: string}) => {
-    const {label, text} = props
+    const {label} = props
+    const {text} = props
 
     const onClick = () => {
         alert(text)
