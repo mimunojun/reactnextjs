@@ -5,6 +5,7 @@ import reportWebVitals from './reportWebVitals';
 import ReactUseCallbackSample from './components/ReactUseCallbackSample';
 import ReactUseStateSample from './components/ReactUseStateSample';
 import ReactUseReducerSample from './components/ReactUseReducerSample';
+import { ReactUseMemoSample } from './components/ReactUseMemoSample';
 
 
 const root = ReactDOM.createRoot(
@@ -13,7 +14,7 @@ const root = ReactDOM.createRoot(
 root.render(
   <div>
   {/* <React.StrictMode> */}
-    <ReactUseReducerSample initialValue={0}/>
+    <ReactUseMemoSample  />
   {/* </React.StrictMode> */}
   </div>
 
