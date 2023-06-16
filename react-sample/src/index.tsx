@@ -2,11 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import ReactUseCallbackSample from './components/ReactUseCallbackSample';
-import ReactUseStateSample from './components/ReactUseStateSample';
-import ReactUseReducerSample from './components/ReactUseReducerSample';
-import { ReactUseMemoSample } from './components/ReactUseMemoSample';
-
+import { UseContextSample } from './components/UseContextSample';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -14,7 +10,7 @@ const root = ReactDOM.createRoot(
 root.render(
   <div>
   {/* <React.StrictMode> */}
-    <ReactUseMemoSample  />
+    <UseContextSample  />
   {/* </React.StrictMode> */}
   </div>
 
