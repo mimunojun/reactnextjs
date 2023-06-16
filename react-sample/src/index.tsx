@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import { UseContextSample } from './components/UseContextSample';
+import { UseContextSample } from './components/354_UseContextSample';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
