@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import { UseContextSample } from './components/354_UseContextSample';
+import { ImpHandleSmp } from './components/355_UseImperativeHandleSample';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -10,7 +10,7 @@ const root = ReactDOM.createRoot(
 root.render(
   <div>
   {/* <React.StrictMode> */}
-    <UseContextSample  />
+    <ImpHandleSmp  />
   {/* </React.StrictMode> */}
   </div>
 
