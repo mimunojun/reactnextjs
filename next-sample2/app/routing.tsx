@@ -37,7 +37,7 @@ const returnReactNode = () => {
 }
 
 const Routing = () => {
-    const pagelist: string[] = ['ssr', 'ssg', 'isr', 'posts/1']
+    const pagelist: string[] = ['ssr', 'ssg', 'isr', 'posts/1', 'image-sample']
     const reactNodeList: ReactNode[] = [<p>hi</p>, <p>hi2</p>]
     return (
         <div>
