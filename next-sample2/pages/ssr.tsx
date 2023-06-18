@@ -1,5 +1,6 @@
 import { GetServerSideProps, NextPage } from 'next'
 import Head from 'next/head'
+import BackToTOP from '@/app/backToTop'
 
 type SSRProps = {
     message: string
@@ -20,6 +21,7 @@ const SSR: NextPage<SSRProps> = (props) => {
                 </p>
                 <p>{message}</p>
             </main>
+            <BackToTOP />
         </div>
     )
 }

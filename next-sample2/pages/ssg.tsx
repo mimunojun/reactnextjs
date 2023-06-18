@@ -1,5 +1,6 @@
 import { NextPage, GetStaticProps, NextPageContext } from "next"
 import Head from 'next/head'
+import BackToTOP from "@/app/backToTop"
 
 type SSGProps = {
     message: string
@@ -21,6 +22,7 @@ const SSG: NextPage<SSGProps> = (props) => {
                     {message}
                 </p>
             </main>
+            <BackToTOP />
         </div>
     )
 }

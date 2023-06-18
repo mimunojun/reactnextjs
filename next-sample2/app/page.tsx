@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import styles from './page.module.css'
+import Routing from './routing'
 
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
           you cannot Get started by editing&nbsp;
           <code className={styles.code}>app/page.tsx</code>
         </p>
+        <Routing />
         <div>
           <a
             href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"

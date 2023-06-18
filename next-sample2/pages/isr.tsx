@@ -1,6 +1,7 @@
 import { GetStaticPaths, NextPage, GetStaticProps } from 'next'
 import Head from 'next/head'
 import { useRouter } from 'next/router'
+import BackToTOP from '@/app/backToTop'
 
 type ISRProps = {
     message: string
@@ -24,6 +25,7 @@ const ISR: NextPage<ISRProps> = (props) => {
                 <p>このページはISRによってビルド時に生成されたページです。</p>
                 <p>{message}</p>
             </main>
+            <BackToTOP />
         </div>
     )
 }
