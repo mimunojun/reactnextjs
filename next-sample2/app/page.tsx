@@ -1,6 +1,11 @@
 import Image from 'next/image'
 import styles from './page.module.css'
 import Routing from './routing'
+import styled from 'styled-components'
+
+const H1 = styled.h1`
+  color: red;
+`
 
 export default function Home() {
   return (
